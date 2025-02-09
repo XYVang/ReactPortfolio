@@ -5,6 +5,7 @@ import Aboutme from "./components/Aboutme.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Contact from "./components/Contact.jsx";
 import Resume from "./components/Resume.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 import { useState } from 'react'
@@ -25,6 +26,9 @@ function App() {
         {activeComponent === "contact" && <Contact />}
         {activeComponent === "resume" && <Resume />}
       </p>
+      <footer>
+      <Footer />
+      </footer>
     </>
   );
 }

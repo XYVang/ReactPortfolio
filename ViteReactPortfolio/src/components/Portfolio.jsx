@@ -1,16 +1,22 @@
 // CSS
 const styles = {
-    heading: {
-        background: '#00ddff',
+    image: {
+      width: "400px",  
+      height: "auto",   
+      margin: "10px",
     },
-};
+  };
 
 function Portfolio() {
     return (
         <div>
             <h3>Portfolio</h3>
-            <p>Here are my projects that I've done in the past.
-            </p>
+            <a href="https://github.com/XYVang">
+                <img src="..\Assets\DreamVaca.png" alt="Footer Image" style={styles.image} />
+            </a>
+            <a href="https://linkedin.com/in/xavier-vang-652a32234">
+                <img src="..\Assets\VehicleMaker.png" alt="Footer Image" style={styles.image} />
+            </a>
         </div>
     );
 }
