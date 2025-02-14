@@ -14,7 +14,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState("about"); // "about" is the default view
+  const [activeComponent, setActiveComponent] = useState("about");
 
   return (
     <>
@@ -26,6 +26,7 @@ function App() {
         {activeComponent === "contact" && <Contact />}
         {activeComponent === "resume" && <Resume />}
       </p>
+      
       <footer>
       <Footer />
       </footer>

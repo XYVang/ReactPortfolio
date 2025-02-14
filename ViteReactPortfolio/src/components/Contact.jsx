@@ -1,25 +1,42 @@
 // CSS
 const styles = {
     container: {
-        maxWidth: "400px",
-        margin: "auto",
-        padding: "20px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        textAlign: "center",
+        width: "100%",
+        minHeight: "calc(100vh - 60px)",
+        padding: "40px 20px 20px",
+        boxSizing: "border-box",
+        backgroundColor: "#00c3cc",
     },
     heading: {
-        background: "#00ddff",
+        marginBottom: "25px",
+        fontSize: "2rem",
+        backgroundColor: "#00c3cc",
         padding: "10px",
         textAlign: "center",
     },
+    paragraph: {
+        fontSize: "1.4rem",  
+        marginBottom: "30px", 
+    },
     input: {
         width: "100%",
-        padding: "8px",
-        marginBottom: "5px",
+        padding: "10px",
+        marginBottom: "15px",
+        borderRadius: "10px",
+        border: "1px solid #ccc",
     },
     textarea: {
         width: "100%",
-        padding: "8px",
+        padding: "10px",
         minHeight: "80px",
-        marginBottom: "5px",
+        marginBottom: "15px",
+        borderRadius: "10px",
+        border: "1px solid #ccc",
     },
     errorMessage: {
         fontSize: "12px",
@@ -28,44 +45,46 @@ const styles = {
     },
     button: {
         width: "100%",
-        padding: "10px",
-        background: "#00ddff",
-        color: "#fff",
+        padding: "12px",
+        background: "#BEBEBE",
+        color: "black",
         border: "none",
         cursor: "pointer",
+        borderRadius: "10px",
+        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
     },
 };
 
 function Contact() {
     const handleBlur = (e) => {
         const errorSpan = e.target.nextElementSibling;
-         // Selects the error message span
+        // Certain section is required
         if (!e.target.value.trim()) {
             errorSpan.textContent = `${e.target.name} is required!`;
         } 
-        // Email validation: must contain "@" and a domain
+        // Email address requires an @ and a domain
         else if (e.target.type === "email" && !/\S+@\S+\.\S+/.test(e.target.value)) {
             errorSpan.textContent = "Please enter a valid email address!";
         } 
-        // Clears the error message when valid
         else {
-            errorSpan.textContent = ""; 
+            errorSpan.textContent = "";
         }
     };
 
     const handleSubmit = (e) => {
+        // With valid answers print message
         e.preventDefault();
         alert("Thanks for the message, it has been sent!");
         // Clears the form after submission
-        e.target.reset(); 
-        // Clears errors on submit
-        document.querySelectorAll(".error-message").forEach((span) => (span.textContent = "")); 
+        e.target.reset();
+        // Clears errors
+        document.querySelectorAll(".error-message").forEach((span) => (span.textContent = ""));
     };
 
     return (
         <div style={styles.container}>
-            <h3 style={styles.heading}>Contact</h3>
-            <p>Please fill in the form below to contact me!</p>
+            <h3 style={styles.heading}>Contact Me</h3>
+            <p style={styles.paragraph}>Please fill in the form below to contact me!</p>
 
             <form onSubmit={handleSubmit}>
                 <div>

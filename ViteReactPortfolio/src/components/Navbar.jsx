@@ -1,50 +1,47 @@
 // CSS
 const styles = {
-    background: '#02b5d1',
-    justifyContent: 'flex-end',
-    navbar: {
+    navbarContainer: {
+        width: '100%', 
         background: '#02b5d1',
-        display: 'flex', // Makes list horizontal
-        justifyContent: 'center', // Center
-        padding: '10px',
-        listStyle: 'none', // Removes bullet points
+        display: 'flex',
+        justifyContent: 'center',
+        padding: '10px 0',
+    },
+    navbar: {
+        display: 'flex', 
+        justifyContent: 'center', 
+        padding: '0',
+        margin: '0',
+        listStyle: 'none', 
+        width: '100%', 
     },
     listItem: {
-        margin: '0 15px', // Adds space between items
+        margin: '0 15px', 
         cursor: 'pointer',
+        color: 'black',
+        fontSize: '1.2rem',
     },
     activeItem: {
-        textDecoration: "underline", // Underline when active
-        color: "white", // Optional: Change text color
+        textDecoration: "underline", 
+        color: "white", 
     },
-}
+};
 
 function Navbar({ activeComponent, setActiveComponent }) {
     return (
-        <div>
+        <div style={styles.navbarContainer}>
             <ul style={styles.navbar}>
-                <li
-                    style={{ ...styles.listItem, ...(activeComponent === "about" ? styles.activeItem : {}) }}
-                    onClick={() => setActiveComponent("about")}
-                >
+                {/* Navigation options to see content */}
+                <li style={{ ...styles.listItem, ...(activeComponent === "about" ? styles.activeItem : {}) }} onClick={() => setActiveComponent("about")}>
                     About Me
                 </li>
-                <li
-                    style={{ ...styles.listItem, ...(activeComponent === "portfolio" ? styles.activeItem : {}) }}
-                    onClick={() => setActiveComponent("portfolio")}
-                >
+                <li style={{ ...styles.listItem, ...(activeComponent === "portfolio" ? styles.activeItem : {}) }} onClick={() => setActiveComponent("portfolio")}>
                     Projects
                 </li>
-                <li
-                    style={{ ...styles.listItem, ...(activeComponent === "contact" ? styles.activeItem : {}) }}
-                    onClick={() => setActiveComponent("contact")}
-                >
+                <li style={{ ...styles.listItem, ...(activeComponent === "contact" ? styles.activeItem : {}) }} onClick={() => setActiveComponent("contact")}>
                     Contact
                 </li>
-                <li
-                    style={{ ...styles.listItem, ...(activeComponent === "resume" ? styles.activeItem : {}) }}
-                    onClick={() => setActiveComponent("resume")}
-                >
+                <li style={{ ...styles.listItem, ...(activeComponent === "resume" ? styles.activeItem : {}) }} onClick={() => setActiveComponent("resume")}>
                     Resume
                 </li>
             </ul>
