@@ -19,10 +19,12 @@ const styles = {
         cursor: 'pointer',
         color: 'black', 
         fontSize: '1.2rem',
+        fontWeight: "bold",
     },
     activeItem: {
         textDecoration: "underline", 
         color: "white", 
+        fontWeight: "bold",
     },
 };
 

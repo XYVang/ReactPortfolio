@@ -7,6 +7,7 @@ const styles = {
         padding: '20px 0',
         color: 'black',
         fontSize: '2rem',
+        fontWeight: "bold",
     },
 };
 
