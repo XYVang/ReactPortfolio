@@ -5,7 +5,7 @@ const styles = {
         backgroundColor: '#008c9e', 
         textAlign: 'center',
         padding: '20px 0',
-        color: 'white',
+        color: 'black',
         fontSize: '2rem',
     },
 };

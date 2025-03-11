@@ -17,7 +17,7 @@ const styles = {
     listItem: {
         margin: '0 15px', 
         cursor: 'pointer',
-        color: 'white', 
+        color: 'black', 
         fontSize: '1.2rem',
     },
     activeItem: {
