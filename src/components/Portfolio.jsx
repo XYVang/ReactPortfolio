@@ -77,8 +77,8 @@ function Portfolio() {
             >
                 <div style={styles.title}>Dream Vacation</div>
                 <a href="https://github.com/XYVang/projectOne.git">
-                    <img src="..\Assets\DreamVaca.png" alt="Dream Vaca" style={styles.image} />
-                    <img src="..\Assets\github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "dreamVaca" ? 0.3 : 0, }} />
+                    <img src="/DreamVaca.png" alt="Dream Vaca" style={styles.image} />
+                    <img src="/github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "dreamVaca" ? 0.3 : 0, }} />
                 </a>
             </div>
 
@@ -90,8 +90,8 @@ function Portfolio() {
             >
                 <div style={styles.title}>Vehicle Maker</div>
                 <a href="https://github.com/XYVang/VehicleBuilder.git">
-                    <img src="..\Assets\VehicleMaker.png" alt="Vehicle Maker" style={styles.image} />
-                    <img src="..\Assets\github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "vehicleMaker" ? 0.3 : 0, }} />
+                    <img src="/VehicleMaker.png" alt="Vehicle Maker" style={styles.image} />
+                    <img src="/github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "vehicleMaker" ? 0.3 : 0, }} />
                 </a>
             </div>
 
@@ -103,8 +103,8 @@ function Portfolio() {
             >
                 <div style={styles.title}>Employee SQL Tracker</div>
                 <a href="https://github.com/XYVang/EmployeeSQL">
-                    <img src="..\Assets\EmployeeSQLTrackerimage.png" alt="Employee SQL Tracker" style={styles.image} />
-                    <img src="..\Assets\github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "employeeSQLTracker" ? 0.3 : 0, }} 
+                    <img src="/EmployeeSQLTrackerimage.png" alt="Employee SQL Tracker" style={styles.image} />
+                    <img src="/github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "employeeSQLTracker" ? 0.3 : 0, }} 
                     />
                 </a>
             </div>
@@ -117,8 +117,8 @@ function Portfolio() {
             >
                 <div style={styles.title}>React Portfolio</div>
                 <a href="https://github.com/XYVang/ReactPortfolio.git">
-                    <img src="..\Assets\ReactPortfolioImage.png" alt="React Portfolio" style={styles.image} />
-                    <img src="..\Assets\github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "reactPortfolio" ? 0.3 : 0, }} />
+                    <img src="/ReactPortfolioImage.png" alt="React Portfolio" style={styles.image} />
+                    <img src="/github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "reactPortfolio" ? 0.3 : 0, }} />
                 </a>
             </div>
 
@@ -130,8 +130,8 @@ function Portfolio() {
             >
                 <div style={styles.title}>README Project</div>
                 <a href="https://github.com/XYVang/README-Generator">
-                    <img src="..\Assets\READMEprojectimage.png" alt="README Project" style={styles.image} />
-                    <img src="..\Assets\github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "readmeProject" ? 0.3 : 0, }} />
+                    <img src="/READMEprojectimage.png" alt="README Project" style={styles.image} />
+                    <img src="/github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "readmeProject" ? 0.3 : 0, }} />
                 </a>
             </div>
 
@@ -143,8 +143,8 @@ function Portfolio() {
             >
                 <div style={styles.title}>Weather API</div>
                 <a href="https://github.com/XYVang/WeatherApp.git">
-                    <img src="..\Assets\WeatherAPIimage.png" alt="Weather API" style={styles.image} />
-                    <img src="..\Assets\github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "weatherAPI" ? 0.3 : 0, }} />
+                    <img src="/WeatherAPIimage.png" alt="Weather API" style={styles.image} />
+                    <img src="/github.png" alt="GitHub Logo" style={{...styles.overlayImage, opacity: hoveredImage === "weatherAPI" ? 0.3 : 0, }} />
                 </a>
             </div>
         </div>

@@ -11,10 +11,10 @@ const styles = {
     return (
       <div>
         <a href="https://github.com/XYVang">
-            <img src="..\Assets\github.png" alt="Footer Image" style={styles.image} />
+            <img src="/github.png" alt="Footer Image" style={styles.image} />
         </a>
         <a href="https://linkedin.com/in/xavier-vang-652a32234">
-            <img src="..\Assets\linkedin.png" alt="Footer Image" style={styles.image} />
+            <img src="/linkedin.png" alt="Footer Image" style={styles.image} />
         </a>
       </div>
     );
