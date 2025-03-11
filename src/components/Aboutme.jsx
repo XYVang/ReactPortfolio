@@ -35,7 +35,7 @@ function Aboutme() {
     return (
         <div style={styles.container}>
             <h3 style={styles.heading}>About Me</h3>
-            <img src="..\Assets\Xavier.jpg" alt="Xavier Image" style={styles.image} />
+            <img src="/src/assets/Xavier.jpg" alt="Xavier Image" style={styles.image} />
             <p style={styles.text}>
                 I'm Xavier Vang, I graduated from Mankato State University in December 2023 with
                 a Bachelor's in Computer Information Technology.
