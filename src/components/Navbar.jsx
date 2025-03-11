@@ -1,9 +1,8 @@
 // CSS
 const styles = {
     navbarContainer: {
-        width: '100%', 
-        background: '#02b5d1',
-        display: 'flex',
+        width: '100%',
+        backgroundColor: '#008c9e', 
         justifyContent: 'center',
         padding: '10px 0',
     },
@@ -18,7 +17,7 @@ const styles = {
     listItem: {
         margin: '0 15px', 
         cursor: 'pointer',
-        color: 'black',
+        color: 'white', 
         fontSize: '1.2rem',
     },
     activeItem: {

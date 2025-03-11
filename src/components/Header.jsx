@@ -1,21 +1,17 @@
 // CSS
 const styles = {
-    headerContainer: {
-        width: "100%",
-        background: "#00ddff",
-        textAlign: "center",
-    },
-    heading: {
-        background: '#00ddff',
+    header: {
+        width: '100%',
+        backgroundColor: '#008c9e', 
+        textAlign: 'center',
+        padding: '20px 0',
+        color: 'white',
+        fontSize: '2rem',
     },
 };
 
 function Header() {
-    return (
-        <div style={styles.headerContainer}>
-            <h1 style={styles.heading}>Xavier's Portfolio</h1>
-        </div>
-    );
+    return <div style={styles.header}>Xavier's Portfolio</div>;
 }
 
 export default Header;
